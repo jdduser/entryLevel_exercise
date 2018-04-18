@@ -1,0 +1,23 @@
+目的在于练习css3动画制作方面：
+（1）主要用css3制作：旋转、缩放、阴影、动画
+（2）要点:
+	每张照片位置不一样；
+	每张照片有一定的旋转角度；
+	照片阴影及缓慢旋转、缓慢放大特效制作；
+（3）技术点
+     	box-shadow:给元素边框添加阴影效果；
+	position：元素定位，绝对定位（脱离文档流）；
+	z-index：上下层显示顺序；
+	transform:使元素变形，配合rotate（旋转），scale（缩放）,skew（扭曲）使用；
+	transition:元素由样式1转为样式2所需的时间；
+（4）制作中遇到的问题
+	容器绝对定位，图片相对定位；
+	图片大小问题：用ps创建一个动作，然后批处理，改变图片大小；
+	图片白色边框：设置padding和background;
+	图片旋转：注意兼容性问题,-webkit-transform针对safari和chrome ,-moz-是针对firefox。-webkit-transform: rotate(30deg);
+	鼠标放到图片上图片转正及放大：img:hover{}里面设置旋转角度为0。-webkit-transform: rotate(0deg);-webkit-transform: scale(1.5);
+	设置动画时间：如果不设置就是立马转正，没有延迟。该设置是在标签上而不是在hover动作中。-webkit-transition: 2s;
+	给图片加阴影：box-shadow: -10px 10px 15px #ccc;第一个参数正为右边阴影，第二个参数正为下面的阴影，第三个参数是阴影的距离，第四个参数是阴影的颜色；
+	将公共样式提取出来放到一个文件里面：在这里面是除了图片离上面的高度还有左边距，图片刚开始的角度；
+	
+	

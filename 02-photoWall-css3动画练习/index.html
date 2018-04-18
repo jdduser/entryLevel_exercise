@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>照片墙</title>
+ 	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body onload="onload()">
+	<div class="catalogue">
+		<a href="#" class="button" id="b-view" onclick="change(this)">风景</a>
+		<a href="#" class="button" id="b-person"onclick="change(this)">人物</a>
+	</div>
+	<div class="container">
+		<div  id="c-view">
+			<img class="pic1" src="images/view/1.jpg">
+			<img class="pic2" src="images/view/2.jpg">
+			<img class="pic3" src="images/view/3.jpg">
+			<img class="pic4" src="images/view/4.jpg">
+			<img class="pic5" src="images/view/5.jpg">
+			<img class="pic6" src="images/view/6.jpg">
+			<img class="pic7" src="images/view/7.jpg">
+			<img class="pic8" src="images/view/8.jpg">
+		</div>
+		<div id="c-person" >
+			<img class="pic1" src="images/person/1.jpg">
+			<img class="pic2" src="images/person/2.jpg">
+			<img class="pic3" src="images/person/3.jpg">
+			<img class="pic4" src="images/person/4.jpg">
+			<img class="pic5" src="images/person/5.jpg">
+			<img class="pic6" src="images/person/6.jpg">
+			<img class="pic7" src="images/person/7.jpg">
+			<img class="pic8" src="images/person/8.jpg">
+		</div>
+	</div>
+	<script type="text/javascript">
+		bview=document.getElementById("b-view");
+		bperson=document.getElementById("b-person");
+		cview=document.getElementById("c-view");
+		cperson=document.getElementById("c-person");
+		function onload(){
+			bview.className="button selected";
+			cview.style.display="block";
+			cperson.style.display="none";
+		}
+
+		function change(e){
+			if(e.id=='b-view'){
+				bview.className="button selected";
+				bperson.className="button";
+				cview.style.display="block";
+				cperson.style.display="none";
+			}
+			if(e.id=='b-person'){
+				bview.className="button";
+				bperson.className="button selected";
+				cview.style.display="none";
+				cperson.style.display="block";
+			}
+		}
+	</script>>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+	background: #eee
+}
+h1{
+	text-align: center;
+}
+.catalogue{
+	width:400px;
+	margin: auto;
+	height:100px;
+}
+.button{
+	text-align: center;
+	display:inline-block;
+	width:180px;
+	height:50px;
+	line-height: 50px;
+	text-decoration:none;
+	color:#7E7788;
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 30px;
+	border:3px solid #fff;
+}
+.selected{
+	background-color: #fff;
+	color:#8FCC33;
+}
+.container{
+	width: 1000px;
+	height: 450px;
+	margin: auto;
+	position: relative;
+}
+img{
+	/**图片边框*/
+	padding: 10px 10px 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+	/**图片边框*/
+
+	position: absolute;
+
+	/*控制旋转**/
+	/*-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	transform: rotate(30deg);
+	/*控制旋转**/
+
+	/**动画时间，在元素上写，不写在hover事件中*/
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	/**动画时间，在元素上写，不写在hover事件中*/
+	z-index:1;
+}
+img:hover{
+	/*鼠标悬浮旋转角度为0,且图片放大1.3倍**/
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	transform: scale(1.3);
+	/*鼠标悬浮旋转角度为0**/
+	/*加阴影 一个参数正为右边阴影，第二个参数正为下面的阴影，第三个参数是阴影的距离，第四个参数是阴影的颜色**/
+	box-shadow: -10px 10px 15px #ccc;
+	/*加阴影**/
+	z-index:2;
+}
+.pic1{
+	top: 20px;
+	left: 100px;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+.pic2{
+	top: 20px;
+	left: 300px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+.pic3{
+	top: 20px;
+	left: 500px;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+.pic4{
+	top: 20px;
+	left: 700px;
+	-webkit-transform: rotate(-25deg);
+	-moz-transform: rotate(-25deg);
+	transform: rotate(-25deg);
+}
+.pic5{
+	top: 260px;
+	left: 100px;
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+.pic6{
+	top: 260px;
+	left: 300px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.pic7{
+	top: 260px;
+	left: 500px;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+.pic8{
+	top: 260px;
+	left: 700px;
+	-webkit-transform: rotate(-16deg);
+	-moz-transform: rotate(-16deg);
+	transform: rotate(-16deg);
+}
